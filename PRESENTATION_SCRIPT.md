@@ -1,0 +1,42 @@
+# Guion Ejecutivo Oral — SIGE-H
+
+**Duración estimada:** 7 a 8 minutos  
+**Audiencia:** Dirección Hospitalaria, Coordinación de Enfermería, Calidad y Recursos Humanos  
+**Atajo de sala:** Tecla `P` para Modo Proyector 16:9 · `J` / `→` para avanzar capítulo a capítulo.
+
+---
+
+## 00 · Portada (0:00 – 0:45)
+> “Buenos días. Hoy presentamos SIGE-H con un propósito muy concreto: transformar la información que enfermería ya genera en cada turno en claridad operativa, calidad del registro y respaldo para nuestras decisiones institucionales.”
+
+## I · El punto de partida (0:45 – 1:35)
+*(Clic en Mensajería y Concentrados manuales).*
+> “Nuestro hospital no carece de datos. La oportunidad está en eliminar el retrabajo que ocurre cuando los registros viajan por mensajería, papel y hojas independientes, consumiendo horas valiosas de gestión y generando incertidumbre en los cortes.”
+
+## II · Evolución del modelo (1:35 – 2:35)
+*(Recorrer Orden institucional → Calidad del dato → Gobierno y resguardo).*
+> “Las hojas de cálculo nos ayudaron a salir del papel y a colaborar rápido. El siguiente paso de madurez es prevenir errores desde el origen, resguardar el acceso según cada responsabilidad y construir continuidad que no dependa de archivos artesanales.”
+
+## III · Flujo integrado (2:35 – 3:20)
+*(Alternar Antes · Fragmentado → Con SIGE-H · Integrado).*
+> “SIGE-H conecta tres eslabones claros: una experiencia ágil en el servicio, reglas de calidad y gobierno desde el origen, y una sola memoria institucional que sirve por igual a Coordinación, Recursos Humanos, Calidad y Dirección.”
+
+## IV · Estructura hospitalaria (3:20 – 4:10)
+*(Expandir un servicio y cambiar entre Hospital A y Hospital B).*
+> “Cada hospital conserva su administración independiente y las subáreas reflejan cómo opera el piso sin duplicar personal en la plantilla.”
+
+## V · Personal y jornadas (4:10 – 5:00)
+*(Alternar Matutino → Guardia Nocturna → Jornada Acumulada).*
+> “Una planificación clara protege los descansos, respeta guardias nocturnas y jornadas acumuladas, y separa cuatro cifras que nunca deben mezclarse: personal adscrito, programado, presente y de cobertura.”
+
+## VI · Incidencias con historia (5:00 – 5:55)
+*(Avanzar 2–3 etapas en la línea temporal).*
+> “Una ausencia operativa en el turno, la decisión de cobertura y la validación posterior de Recursos Humanos se conservan en su propia línea temporal sin reescribir la historia.”
+
+## VII · Pase de lista (5:55 – 6:45)
+*(Cambiar un estado `PRESENTE` ↔ `AUSENTE` en vivo).*
+> “Cuando la jefatura registra asistencia en segundos, el sistema valida permisos, evita duplicados y actualiza la vista de Coordinación para gestionar coberturas oportunamente.”
+
+## VIII · Valor y horizonte (6:45 – 7:50)
+*(Mostrar Dirección, Coordinación, RRHH y Calidad + evolución en 4 etapas).*
+> “Cada área recibe valor concreto sobre una misma fuente de verdad. Avanzamos de forma gradual y medible: consolidar la integración, iniciar un piloto acompañado en servicios seleccionados y escalar con base en resultados observados. Quedamos a sus órdenes.”
