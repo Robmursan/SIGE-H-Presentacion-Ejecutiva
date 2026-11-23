@@ -7,19 +7,19 @@
 ---
 
 ## 00 · Portada (0:00 – 0:45)
-> “Buenos días. Hoy presentamos SIGE-H con un propósito muy concreto: transformar la información que enfermería ya genera en cada turno en claridad operativa, calidad del registro y respaldo para nuestras decisiones institucionales.”
+> “Good morning. Today we present SIGE-H with a clear purpose: to transform the information nursing already generates each shift into operational clarity, better documentation quality and support for our institutional decisions.”
 
-## I · El punto de partida (0:45 – 1:35)
-*(Clic en Mensajería y Concentrados manuales).*
-> “Nuestro hospital no carece de datos. La oportunidad está en eliminar el retrabajo que ocurre cuando los registros viajan por mensajería, papel y hojas independientes, consumiendo horas valiosas de gestión y generando incertidumbre en los cortes.”
+## I · Context (0:45 – 1:35)
+*(Select Messaging and Manual summaries).*
+> “Our hospital does not lack data. The opportunity is to eliminate the duplication that occurs when records travel through messaging, paper and independent spreadsheets, consuming valuable management time and creating uncertainty during reporting cutoffs.”
 
-## II · Evolución del modelo (1:35 – 2:35)
-*(Recorrer Orden institucional → Calidad del dato → Gobierno y resguardo).*
-> “Las hojas de cálculo nos ayudaron a salir del papel y a colaborar rápido. El siguiente paso de madurez es prevenir errores desde el origen, resguardar el acceso según cada responsabilidad y construir continuidad que no dependa de archivos artesanales.”
+## II · Problem statement (1:35 – 2:35)
+*(Review institutional organization → Data quality → Governance and safeguards).*
+> “Spreadsheets helped us move away from paper and collaborate quickly. The next stage of maturity is preventing errors at the source, protecting access according to responsibility and creating continuity that does not depend on improvised files.”
 
-## III · Flujo integrado (2:35 – 3:20)
-*(Alternar Antes · Fragmentado → Con SIGE-H · Integrado).*
-> “SIGE-H conecta tres eslabones claros: una experiencia ágil en el servicio, reglas de calidad y gobierno desde el origen, y una sola memoria institucional que sirve por igual a Coordinación, Recursos Humanos, Calidad y Dirección.”
+## III · SIGE as the proposed solution (2:35 – 3:20)
+*(Switch between Before · Fragmented → With SIGE-H · Integrated).*
+> “SIGE-H connects three clear components: an agile experience at the point of care, quality and governance rules from the source, and a single institutional memory that serves Coordination, Human Resources, Quality and Leadership.”
 
 ## IV · Estructura hospitalaria (3:20 – 4:10)
 *(Expandir un servicio y cambiar entre Hospital A y Hospital B).*

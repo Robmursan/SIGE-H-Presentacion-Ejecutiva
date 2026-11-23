@@ -5,18 +5,18 @@ import { usePresentation } from '../context/presentation-context-store'
 
 export function ArchitectureDiagram() {
   const { subStep, setSubStep, isReducedMotion } = usePresentation()
-  // subStep 0 = El escenario actual, subStep 1 = La solución con SIGE
+  // subStep 0 = Current scenario, subStep 1 = SIGE solution
   const isSolution = subStep === 1
 
   return (
-    <SectionShell id="cap-03" numeral="III" kicker="La solución · SIGE" theme="dark" showGrid>
+    <SectionShell id="cap-03" numeral="III" kicker="The solution · SIGE" theme="dark" showGrid>
       <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
         <div className="lg:col-span-7">
           <AnimatedHeadline
             id="cap-03-heading"
-            title="La solución con SIGE:"
-            italicAccent="un solo flujo hospitalario continuo."
-            subtitle="En lugar de conectar archivos dispersos, SIGE integra en una plataforma el registro en servicio, las reglas del hospital y la memoria institucional."
+            title="The SIGE solution:"
+            italicAccent="one continuous hospital workflow."
+            subtitle="Instead of connecting dispersed files, SIGE integrates unit documentation, hospital rules and institutional history into one platform."
             inverted
           />
         </div>
@@ -24,12 +24,12 @@ export function ArchitectureDiagram() {
         <div className="lg:col-span-5 lg:flex lg:justify-end">
           <div
             role="group"
-            aria-label="Alternar situación actual y solución con SIGE"
+            aria-label="Switch between the current situation and the SIGE solution"
             className="inline-flex rounded-full border border-[#E9E0CE]/20 bg-[#0B1E30]/90 p-1.5"
           >
             {[
-              { step: 0, label: 'Antes · Fragmentado' },
-              { step: 1, label: 'Solución · SIGE' },
+              { step: 0, label: 'Before · Fragmented' },
+              { step: 1, label: 'Solution · SIGE' },
             ].map((opt) => {
               const active = subStep === opt.step
               return (
@@ -81,25 +81,25 @@ export function ArchitectureDiagram() {
               transition={{ duration: 0.26, ease: [0.16, 1, 0.3, 1] }}
             >
               <p className="font-mono-tech mb-7 text-xs tracking-[0.18em] text-[#C8B087] uppercase">
-                Lo que hoy nos frena · Operación en silos
+                What slows us down today · Siloed operations
               </p>
 
               <div className="grid gap-8 divide-y divide-[#E9E0CE]/12 md:grid-cols-3 md:divide-x md:divide-y-0">
                 {[
                   {
                     step: '01',
-                    title: 'Registro aislado por servicio',
-                    desc: 'Cada turno lleva archivos independientes con criterios que cambian mes con mes.',
+                    title: 'Record isolated by unit',
+                    desc: 'Each shift uses independent files with criteria that change from month to month.',
                   },
                   {
                     step: '02',
-                    title: 'Consolidación manual',
-                    desc: 'Coordinación integra avisos y hojas dispersas para estimar necesidades de cobertura.',
+                    title: 'Manual consolidation',
+                    desc: 'Coordination combines notices and dispersed spreadsheets to estimate coverage needs.',
                   },
                   {
                     step: '03',
-                    title: 'Conciliación posterior',
-                    desc: 'Revisión repetida para cuadrar novedades con Recursos Humanos y Dirección.',
+                    title: 'Post-event reconciliation',
+                    desc: 'Repeated review is required to reconcile changes with Human Resources and Leadership.',
                   },
                 ].map((col, idx) => (
                   <motion.div
@@ -126,7 +126,7 @@ export function ArchitectureDiagram() {
             >
               <div className="mb-7 flex items-center justify-between gap-4">
                 <p className="font-mono-tech text-xs tracking-[0.18em] text-[#7EC2A6] uppercase">
-                  Nuestra propuesta · Un solo flujo de extremo a extremo
+                  Our proposal · One end-to-end workflow
                 </p>
                 <img
                   src="/assets/brand/sige-logo-light.png"
@@ -138,19 +138,19 @@ export function ArchitectureDiagram() {
               <div className="grid gap-8 divide-y divide-[#E9E0CE]/12 md:grid-cols-3 md:divide-x md:divide-y-0">
                 {[
                   {
-                    step: '01 · OPERACIÓN',
-                    title: 'Experiencia ágil por rol',
-                    desc: 'Registro sencillo en el servicio desde dispositivo móvil y panel web dedicado para Coordinación, RRHH y Dirección.',
+                    step: '01 · OPERATIONS',
+                    title: 'Role-based agility',
+                    desc: 'Simple unit documentation from mobile devices and a dedicated web workspace for Coordination, HR and Leadership.',
                   },
                   {
-                    step: '02 · GOBIERNO',
-                    title: 'Calidad desde el origen',
-                    desc: 'Valida automáticamente responsabilidades por hospital, vigencias laborales y reglas de turno para evitar duplicados.',
+                    step: '02 · GOVERNANCE',
+                    title: 'Quality at the source',
+                    desc: 'Automatically validates hospital responsibilities, employment status and shift rules to prevent duplicates.',
                   },
                   {
-                    step: '03 · MEMORIA',
-                    title: 'Una sola fuente de verdad',
-                    desc: 'Conserva estructura, jornadas, incidencias y trazabilidad en un historial íntegro listo para cada decisión.',
+                    step: '03 · MEMORY',
+                    title: 'A single source of truth',
+                    desc: 'Preserves structure, shifts, incidents and traceability in a complete history ready for every decision.',
                   },
                 ].map((col, idx) => (
                   <motion.div
@@ -175,7 +175,7 @@ export function ArchitectureDiagram() {
         {/* Cadena animada de valor */}
         <div className="mt-9 border-t border-[#E9E0CE]/14 pt-6">
           <div className="flex flex-wrap items-center justify-between gap-4 font-mono-tech text-sm text-[#E9E0CE]">
-            {['Captura única', 'Validación automática', 'Historial íntegro', 'Decisión oportuna'].map(
+            {['Single capture', 'Automatic validation', 'Complete history', 'Timely decision'].map(
               (item, idx, arr) => (
                 <div key={item} className="flex items-center gap-4">
                   <motion.span

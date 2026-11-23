@@ -15,66 +15,66 @@ interface ContextActor {
 const CONTEXT_PILLARS = [
   {
     metric: '24 / 7',
-    label: 'Operación continua',
-    detail: 'Turnos matutinos, vespertinos, nocturnos y jornadas acumuladas los 365 días.',
+    label: 'Continuous operation',
+    detail: 'Morning, evening, night and accumulated shifts operate 365 days a year.',
   },
   {
-    metric: 'Servicios',
-    label: 'Dinámica cambiante',
-    detail: 'Áreas críticas, urgencias, quirófano y hospitalización ajustan su plantilla cada guardia.',
+    metric: 'Services',
+    label: 'Changing dynamics',
+    detail: 'Critical care, emergency, operating room and inpatient areas adjust staffing each shift.',
   },
   {
-    metric: '5 áreas',
-    label: 'Cadena interdependiente',
-    detail: 'Un mismo registro de piso impacta cobertura, validación laboral, calidad y dirección.',
+    metric: '5 areas',
+    label: 'Interdependent chain',
+    detail: 'A single unit record affects coverage, HR validation, quality and leadership decisions.',
   },
 ]
 
 const HOSPITAL_CIRCUIT: ContextActor[] = [
   {
     step: '01',
-    role: 'Jefatura de servicio',
-    shortRole: 'Jefatura',
+    role: 'Unit leadership',
+    shortRole: 'Unit lead',
     responsibility:
-      'Registra la presencia del personal, asigna subáreas en piso y documenta las novedades al inicio y cierre de cada turno.',
-    valueNeed: 'Punto de origen donde nace la información operativa real.',
-    handoff: 'Entrega la situación del servicio a Supervisión',
+      'Records staff presence, assigns unit areas and documents changes at the beginning and end of each shift.',
+    valueNeed: 'The point of origin where real operational information is created.',
+    handoff: 'Reports the unit status to Nursing Supervision',
   },
   {
     step: '02',
-    role: 'Supervisión de enfermería',
-    shortRole: 'Supervisión',
+    role: 'Nursing supervision',
+    shortRole: 'Supervision',
     responsibility:
-      'Identifica incidencias en curso, evalúa la carga asistencial de cada área y detecta necesidades inmediatas de cobertura.',
-    valueNeed: 'Pulso operativo que permite anticipar desbalances durante la guardia.',
-    handoff: 'Escala necesidades de ajuste a Coordinación',
+      'Identifies ongoing incidents, evaluates each area workload and detects immediate coverage needs.',
+    valueNeed: 'Operational insight that helps anticipate imbalance during the shift.',
+    handoff: 'Escalates adjustment needs to Coordination',
   },
   {
     step: '03',
-    role: 'Coordinación de Enfermería',
-    shortRole: 'Coordinación',
+    role: 'Nursing coordination',
+    shortRole: 'Coordination',
     responsibility:
-      'Revisa el panorama consolidado del hospital, redistribuye recursos humanos entre servicios y comunica movimientos clave.',
-    valueNeed: 'Equilibrio oportuno de la fuerza laboral en toda la unidad.',
-    handoff: 'Comunica movimientos e incidencias a Recursos Humanos',
+      'Reviews the hospital-wide view, reallocates human resources across units and communicates key movements.',
+    valueNeed: 'Timely balance of the workforce across the facility.',
+    handoff: 'Reports movements and incidents to Human Resources',
   },
   {
     step: '04',
-    role: 'Recursos Humanos',
-    shortRole: 'RRHH',
+    role: 'Human resources',
+    shortRole: 'HR',
     responsibility:
-      'Valida incapacidades, licencias, vacaciones, sustituciones y vigencias contractuales conforme a la normativa institucional.',
-    valueNeed: 'Certeza administrativa y respaldo íntegro para cada trabajador.',
-    handoff: 'Consolida indicadores oficiales para Dirección y Calidad',
+      'Validates absences, leave, vacations, substitutions and contract status according to institutional policy.',
+    valueNeed: 'Administrative certainty and complete support for every employee.',
+    handoff: 'Consolidates official indicators for Leadership and Quality',
   },
   {
     step: '05',
-    role: 'Dirección y Calidad',
-    shortRole: 'Dirección · Calidad',
+    role: 'Leadership and quality',
+    shortRole: 'Leadership · Quality',
     responsibility:
-      'Requiere información consistente, oportuna y trazable para el seguimiento continuo, la planeación de dotación y la toma de decisiones.',
-    valueNeed: 'Visión institucional confiable para gobernar el hospital.',
-    handoff: 'Retroalimenta criterios y estándares a toda la operación',
+      'Requires consistent, timely and traceable information for continuous monitoring, staffing planning and decision-making.',
+    valueNeed: 'A reliable institutional view for governing the hospital.',
+    handoff: 'Provides criteria and standards to the entire operation',
   },
 ]
 
@@ -85,12 +85,12 @@ export function HospitalContext() {
   const progressRatio = (activeIdx + 1) / HOSPITAL_CIRCUIT.length
 
   return (
-    <SectionShell id="cap-01" numeral="I" kicker="El contexto · Operación hospitalaria" theme="white">
+    <SectionShell id="cap-01" numeral="I" kicker="Context · Hospital operations" theme="white">
       <AnimatedHeadline
         id="cap-01-heading"
-        title="Enfermería sostiene la operación"
-        italicAccent="continua del hospital."
-        subtitle="Antes de hablar del problema, conviene ubicar el entorno: cada turno activa una cadena de cinco niveles que dependen de la misma información."
+        title="Nursing sustains the hospital"
+        italicAccent="continuous operation."
+        subtitle="Before addressing the problem, it is important to understand the environment: every shift activates a five-level chain that depends on the same information."
       />
 
       {/* Tres claves del entorno hospitalario */}
@@ -122,10 +122,10 @@ export function HospitalContext() {
       <div className="mt-5">
         <div className="flex items-center justify-between gap-4">
           <span className="font-mono-tech text-xs tracking-[0.16em] text-[#284B6A] uppercase">
-            Circuito cotidiano de información · Eslabón {activeIdx + 1} de {HOSPITAL_CIRCUIT.length}
+            Daily information circuit · Link {activeIdx + 1} of {HOSPITAL_CIRCUIT.length}
           </span>
           <span className="hidden font-mono-tech text-xs text-[#6A89A2] sm:inline">
-            Usa ← / → para recorrer el flujo
+            Use ← / → to explore the flow
           </span>
         </div>
 
@@ -142,7 +142,7 @@ export function HospitalContext() {
         {/* Selector interactivo de los 5 actores */}
         <div
           role="tablist"
-          aria-label="Actores del circuito operativo de enfermería"
+          aria-label="Actors in the nursing operational information circuit"
           className="mt-3.5 grid gap-2 sm:grid-cols-5"
         >
           {HOSPITAL_CIRCUIT.map((actor, idx) => {

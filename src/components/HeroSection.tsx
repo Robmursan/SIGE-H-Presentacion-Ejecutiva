@@ -46,12 +46,12 @@ export function HeroSection() {
             />
             <span className="hidden h-5 w-px bg-[#E9E0CE]/24 sm:inline-block" aria-hidden="true" />
             <span className="text-sm tracking-[0.05em] text-[#C8D8E6]">
-              Sistema de Gestión de Enfermería Hospitalaria
+              Hospital Nursing Management System
             </span>
           </div>
 
           <span className="font-mono-tech text-xs tracking-[0.14em] text-[#9CB3C7] uppercase">
-            Dirección · Enfermería · Calidad · RRHH
+            Leadership · Nursing · Quality · HR
           </span>
         </motion.div>
 
@@ -64,7 +64,7 @@ export function HeroSection() {
                 transition={{ duration: 0.7, delay: 0.06, ease: [0.16, 1, 0.3, 1] }}
                 className="font-editorial mb-4 text-xl italic text-[#E9E0CE] sm:text-2xl"
               >
-                “De registrar actividades a comprender el hospital.”
+                “From recording activities to understanding the hospital.”
               </motion.p>
             </div>
 
@@ -79,7 +79,7 @@ export function HeroSection() {
                   transition={{ duration: 0.8, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
                   className="block"
                 >
-                  La enfermería
+                  Nursing generates
                 </motion.span>
               </span>
               <span className="block overflow-hidden pb-1">
@@ -89,7 +89,7 @@ export function HeroSection() {
                   transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                   className="block"
                 >
-                  genera información.
+                  information.
                 </motion.span>
               </span>
               <span className="block overflow-hidden pb-1 text-[#E9E0CE]">
@@ -99,8 +99,8 @@ export function HeroSection() {
                   transition={{ duration: 0.85, delay: 0.28, ease: [0.16, 1, 0.3, 1] }}
                   className="block"
                 >
-                  SIGE la convierte en{' '}
-                  <em className="italic text-[#FFFDF8]">valor operativo.</em>
+                  SIGE turns it into{' '}
+                  <em className="italic text-[#FFFDF8]">operational value.</em>
                 </motion.span>
               </span>
             </h1>
@@ -111,8 +111,8 @@ export function HeroSection() {
               transition={{ duration: 0.7, delay: 0.38, ease: [0.16, 1, 0.3, 1] }}
               className="mt-7 max-w-2xl text-lg leading-relaxed text-[#D3E0EC] sm:text-xl"
             >
-              Del reto cotidiano de los registros dispersos hacia una solución diseñada para dar
-              claridad, orden y respaldo a cada decisión hospitalaria.
+              From the daily challenge of dispersed records to a solution designed to bring
+              clarity, organization and support to every hospital decision.
             </motion.p>
 
             <motion.div
@@ -126,7 +126,7 @@ export function HeroSection() {
                 onClick={nextBeat}
                 className="tactile-lift group inline-flex items-center gap-3 rounded-full bg-[#E9E0CE] px-8 py-4 text-base font-semibold text-[#112B43] hover:bg-[#FFFDF8]"
               >
-                <span>Explorar el contexto</span>
+                <span>Explore the context</span>
                 <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </button>
 
@@ -135,7 +135,7 @@ export function HeroSection() {
                 onClick={() => goToChapterId('cap-11')}
                 className="tactile-lift inline-flex items-center gap-2.5 rounded-full border border-[#E9E0CE]/28 px-7 py-4 text-base font-medium text-[#FFFDF8] hover:border-[#E9E0CE]/60 hover:bg-[#E9E0CE]/8"
               >
-                <span>Conocer al equipo</span>
+                <span>Meet the team</span>
               </button>
             </motion.div>
           </div>
@@ -151,7 +151,7 @@ export function HeroSection() {
                 viewBox="-36 -18 512 476"
                 className="h-auto w-full overflow-visible"
                 role="img"
-                aria-label="Composición orbital integrando Dirección, Enfermería, Calidad y Recursos Humanos en torno a SIGE"
+                aria-label="Orbital composition integrating Leadership, Nursing, Quality and Human Resources around SIGE"
               >
                 <motion.circle
                   cx="220"
@@ -209,10 +209,10 @@ export function HeroSection() {
                 <line x1="30" y1="220" x2="410" y2="220" stroke="#E9E0CE" strokeOpacity="0.1" />
 
                 {[
-                  { x: 220, y: 38, label: 'DIRECCIÓN', dy: -14 },
-                  { x: 402, y: 220, label: 'CALIDAD', dy: -12 },
-                  { x: 220, y: 402, label: 'RRHH', dy: 22 },
-                  { x: 38, y: 220, label: 'ENFERMERÍA', dy: -12 },
+                  { x: 220, y: 38, label: 'LEADERSHIP', dy: -14 },
+                  { x: 402, y: 220, label: 'QUALITY', dy: -12 },
+                  { x: 220, y: 402, label: 'HR', dy: 22 },
+                  { x: 38, y: 220, label: 'NURSING', dy: -12 },
                 ].map((node, i) => (
                   <motion.g
                     key={node.label}
@@ -270,7 +270,7 @@ export function HeroSection() {
                   fontFamily="Newsreader Variable, Georgia, serif"
                   fontStyle="italic"
                 >
-                  Claridad compartida
+                  Shared clarity
                 </text>
               </svg>
             </div>

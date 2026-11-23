@@ -7,46 +7,46 @@ import { usePresentation } from '../context/presentation-context-store'
 const SOURCES = [
   {
     id: 'whatsapp',
-    label: 'Mensajería',
-    detail: 'Avisos urgentes de turno enviados en texto libre, difíciles de rastrear días después.',
+    label: 'Messaging',
+    detail: 'Urgent shift notices sent in free text and difficult to trace days later.',
     icon: MessageSquare,
   },
   {
     id: 'papel',
-    label: 'Papel y bitácoras',
-    detail: 'Registros manuales que exigen transcribirse nuevamente al terminar la jornada.',
+    label: 'Paper and logs',
+    detail: 'Manual records that must be transcribed again at the end of the shift.',
     icon: FileText,
   },
   {
     id: 'sheets',
-    label: 'Hojas independientes',
-    detail: 'Archivos separados por servicio o periodo, con criterios distintos de captura.',
+    label: 'Independent spreadsheets',
+    detail: 'Files separated by unit or period, with inconsistent capture criteria.',
     icon: FileSpreadsheet,
   },
   {
     id: 'concentrados',
-    label: 'Concentrados manuales',
-    detail: 'Consolidaciones repetidas para informar a Coordinación, Recursos Humanos y Dirección.',
+    label: 'Manual summaries',
+    detail: 'Repeated consolidations used to report to Coordination, Human Resources and Leadership.',
     icon: FolderSync,
   },
 ] as const
 
 const PROBLEM_POINTS = [
   {
-    title: 'Esfuerzo duplicado',
-    detail: 'El mismo evento se registra varias veces entre servicio, coordinación y reportes.',
+    title: 'Duplicated effort',
+    detail: 'The same event is recorded multiple times across units, coordination and reports.',
   },
   {
-    title: 'Incertidumbre en los cortes',
-    detail: 'Criterios distintos entre servicios retrasan la visión consolidada del hospital.',
+    title: 'Uncertain cutoffs',
+    detail: 'Different unit criteria delay the consolidated view of the hospital.',
   },
   {
-    title: 'Historial vulnerable',
-    detail: 'Al editar una celda se borra la diferencia entre lo ocurrido en turno y su validación.',
+    title: 'Vulnerable history',
+    detail: 'Editing a cell removes the distinction between what occurred during the shift and its validation.',
   },
   {
-    title: 'Tiempo restado a la gestión',
-    detail: 'Liderazgos de enfermería invierten horas valiosas en cuadrar archivos en lugar de decidir.',
+    title: 'Time diverted from management',
+    detail: 'Nursing leaders spend valuable hours reconciling files instead of making decisions.',
   },
 ]
 
@@ -56,12 +56,12 @@ export function OriginConvergence() {
   const activeSource = SOURCES[activeIdx]
 
   return (
-    <SectionShell id="cap-02" numeral="II" kicker="El problema" theme="paper" showGrid>
+    <SectionShell id="cap-02" numeral="II" kicker="The problem" theme="paper" showGrid>
       <AnimatedHeadline
         id="cap-02-heading"
-        title="Cada turno genera información valiosa."
-        italicAccent="El problema es que hoy se dispersa."
-        subtitle="El hospital no carece de datos: el desgaste diario ocurre al recopilar, cruzar y conciliar manualmente registros que nacen en canales distintos."
+        title="Every shift generates valuable information."
+        italicAccent="The problem is that it is currently dispersed."
+        subtitle="The hospital does not lack data. The daily burden comes from manually collecting, cross-checking and reconciling records created across different channels."
       />
 
       <div className="mt-10 grid items-center gap-10 lg:grid-cols-12">
@@ -105,7 +105,7 @@ export function OriginConvergence() {
                 viewBox="0 0 340 220"
                 className="h-auto w-full"
                 role="img"
-                aria-label="Cuatro canales actuales convergiendo en una consolidación manual"
+                aria-label="Four current channels converging into a manual summary"
               >
                 {SOURCES.map((src, idx) => {
                   const y = 28 + idx * 54
@@ -185,7 +185,7 @@ export function OriginConvergence() {
                   fontFamily="IBM Plex Mono, monospace"
                   letterSpacing="1.6"
                 >
-                  CONCENTRADO
+                  SUMMARY
                 </text>
                 <text
                   x="260"
@@ -195,7 +195,7 @@ export function OriginConvergence() {
                   fontSize="15"
                   fontFamily="Newsreader Variable, Georgia, serif"
                 >
-                  Cuello manual
+                  Manual bottleneck
                 </text>
               </svg>
 
