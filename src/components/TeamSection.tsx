@@ -28,7 +28,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     firstName: 'Roberto',
     lastName: 'Murillo Sánchez',
-    photo: '/assets/team/roberto-murillo.jpg',
+    photo: '/ROberto Murillo SAnchez.jpeg',
   },
 ]
 
